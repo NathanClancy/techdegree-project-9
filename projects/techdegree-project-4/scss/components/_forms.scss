@@ -1,0 +1,27 @@
+.form {
+	@include flexbox-column;
+	.headline--secondary {
+		align-self: flex-start;
+		padding-bottom: 20px;
+	}
+		.form__label--hidden {
+			display: none;
+		}
+	input {
+		border: none;
+		border-bottom: solid 6px $headline_color;
+		width: 90%;
+		margin-bottom: 25px;		
+	}
+	.form__input {
+		font-size: 0.9em;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+}
+
+@include for-tablet-only {
+	.form {
+		margin-left: 50px;
+	}
+}

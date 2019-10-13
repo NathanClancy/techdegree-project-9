@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Interactive Photo Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.css">	
+<link rel="stylesheet" href="css/styles.css">
+<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />    	
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700,900&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+	
+        <form action="#" method="GET">
+            <label for="search-box"></label>
+            <input type="text" name="search" id="search-box" placeholder="Search">
+        </form>
+		
+    <ul id="lightGallery" class="list">
+      <li data-rel="lightbox:myCollection" data-src="images/01.jpg" data-sub-html="<h3>Hay Bales</h3><p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>" class="lightbox-link">
+          <img src="images/thumbnails/01.jpg" alt="Field containing bales of hay." />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/02.jpg" data-sub-html="<h3>Lake</h3><p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>" class="lightbox-link">
+          <img src="images/thumbnails/02.jpg" alt="Calm lake and snowy mountains" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/03.jpg" data-sub-html="<h3>Canyon</h3><p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>" class="lightbox-link">
+          <img src="images/thumbnails/03.jpg" alt="Grassy canyon with trees below" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/04.jpg" data-sub-html="<h3>Iceberg</h3><p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>" class="lightbox-link">
+          <img src="images/thumbnails/04.jpg" alt="Cold surrondings with iceberg" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/05.jpg" data-sub-html="<h3>Desert</h3><p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>" class="lightbox-link">
+          <img src="images/thumbnails/05.jpg" alt="Red cliffs in the desert" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/06.jpg" data-sub-html="<h3>Fall</h3><p>Fall is coming, I love when the leaves on the trees start to change color.</p>" class="lightbox-link">
+          <img src="images/thumbnails/06.jpg" alt="Yellow grass and wilting trees" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/07.jpg" data-sub-html="<h3>Plantation</h3><p>I drove past this plantation yesterday, everything is so green!</p>" class="lightbox-link">
+          <img src="images/thumbnails/07.jpg" alt="Green plantation land" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/08.jpg" data-sub-html="<h3>Dunes</h3><p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>" class="lightbox-link">
+          <img src="images/thumbnails/08.jpg" alt="Sand dunes and blue summer sky" />
+      </li>
+		
+      <li data-rel="lightbox:myCollection" data-src="images/09.jpg" data-sub-html="<h3>Countryside Lane</h3><p>We enjoyed a quiet stroll down this countryside lane.</p>" class="lightbox-link">
+          <img src="images/thumbnails/09.jpg" alt="Quiet Countryside Lane" />
+      </li>	
+
+      <li data-rel="lightbox:myCollection" data-src="images/10.jpg" data-sub-html="<h3>Sunset</h3><p>Sunset at the coast! The sky turned a lovely shade of orange.</p>" class="lightbox-link">
+          <img src="images/thumbnails/10.jpg" alt="Sunset on the coast" />
+      </li>	
+
+      <li data-rel="lightbox:myCollection" data-src="images/11.jpg" data-sub-html="<h3>Cave</h3><p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>" class="lightbox-link">
+          <img src="images/thumbnails/11.jpg" alt="View from inside a cave looking out to the landscape" />
+      </li>	
+		
+      <li data-rel="lightbox:myCollection" data-src="images/12.jpg" data-sub-html="<h3>Bluebells</h3><p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>" class="lightbox-link">
+          <img src="images/thumbnails/12.jpg" alt="Meadow of bluebells" />
+      </li>			
+    </ul>	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+	<script type="text/javascript" src="jquery-2.0.2.min.js"></script>	
+	<script src="js/lightgallery.js"></script>
+	<script src="js/index.js"></script>	
+	
+	
+	
+
+		
+	
+	
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightGallery").lightGallery({
+ 
+      mode      : 'slide',  // Type of transition between images. Either 'slide' or 'fade'.
+      useCSS    : true,     // Whether to always use jQuery animation for transitions or as a fallback.
+      cssEasing : 'ease',   // Value for CSS "transition-timing-function".
+      easing    : 'linear', //'for jquery animation',//
+      speed     : 600,      // Transition duration (in ms).
+ 
+      controls         : true,  // Whether to display prev/next buttons.
+      hideControlOnEnd : false, // If true, prev/next button will be hidden on first/last image.
+      escKey           : true,  // Whether lightGallery should be closed when user presses "Esc".
+      closable         : true,  //allows clicks on dimmer to close gallery
+            
+    });
+  });
+</script>
+	
+</body>
+</html>

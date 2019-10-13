@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.8em;
+  font-family: 'Rubik', sans-serif;
+  color: #2E2F3E;
+  font-weight: 300;
+  background-color: #FFF;
+  padding: 0.3em;
+  max-width: 1400px;
+  margin: auto;
+}
+
+hr {
+  color: #FFF;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+  color: #000;
+  margin: 0.8em auto;
+  margin-bottom: 2em;
+}
+
+#search {
+  border-radius: 5px;
+  background-color: #14151F;
+  border: 0;	
+  color: #FFF;
+  font-weight: 500;
+  padding: 0 15px;	
+}
+
+input:focus, #search:focus {
+	border: 3px solid #03A9F4;
+	transition: 0.2s;
+}
+
+#employee_list {
+  display: grid;
+  grid-row-gap: 1em;
+  justify-items: center;
+
+}
+
+/*Employee Card CSS*/
+
+#employee_list {
+  display: grid;
+  grid-row-gap: 1em;
+  justify-items: center;
+}
+
+.employee-card {
+  border-radius: 5px;
+  background-color: #14151F;
+  box-shadow: none;
+  padding: 0.5em;
+  display: flex;
+  width: 93%;
+  margin: auto;
+  border: 5px solid #14151F;	
+}
+
+.employee-card:hover {
+	border: 5px solid #03A9F4;
+	transition: 0.2s;	
+}
+
+img {
+  border-radius: 50%;
+  width: 5em;
+  height: auto;
+  margin: auto 0.4em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5em;
+}
+
+
+.card p {
+  margin: 0.4em;
+  margin-left: 0;
+  color: #FFF;	
+}
+
+.card h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #FFF;
+  margin: 0.25em 0;
+	
+}
+
+/*Employee modal CSS*/
+
+#employee-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: #FFF;
+}
+
+.modal-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 25%;
+  align-items: center;
+  text-align: center;
+  background-color: #14151F;
+}
+
+.modal-details p, h2 {
+ color: #FFF;
+}
+
+.modal-details p {
+	font-weight: 400;
+}
+
+.close-modal {
+  position: absolute;
+  bottom: 1rem;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #03A9F4;
+  border: none;
+  border-radius: 5px;
+  height: 3em;
+  font-weight: 500;
+  font-size: 0.95em;
+  width: 16em;	
+}
+
+.close-modal:hover {
+	cursor: pointer;
+background-color:
+#FFF;
+border: solid 3px
+#03A9F4;
+color:
+#03A9F4;
+transition: 0.3s;
+}
+
+
+.prev,
+.next {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5em;
+  cursor: pointer;
+  height: 2em;
+  width: 2em;
+}
+
+.prev {
+  left: 2rem;
+  color: #03A9F4;
+}
+
+.next {
+  right: 2rem;
+  color: #03A9F4;	
+}
+
+/*Responsive CSS*/
+
+@media (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  #search {
+    width: 15em;
+	height: 3em;
+  }
+
+  header label {
+    font-size: 1.5em;
+	color: #14151F;
+	font-weight: 500;
+	padding-right: 1em;	  
+  }
+
+
+  #employee_list {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    grid-auto-rows: auto;
+    align-items: stretch;
+    margin: 0 0.5em;
+  }
+
+  .employee-card {
+    padding: 1em 0.5em;
+    width: 100%;
+  }
+
+  .employee-card img {
+    width: 5em;
+    height: 100%;
+  }
+
+  .modal-detail {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0 1.2em 0;
+	color: #14151F;
+  }
+
+
+  #employee_list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .employee-card {
+    min-width: 90%;
+    max-width: 100%;
+  }
+
+  img {
+    margin: 1em;
+    width: 7em;
+  }
+
+  .card {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .modal-detail {
+    width: 35%;
+height: 426px;	  
+  }
+
+}

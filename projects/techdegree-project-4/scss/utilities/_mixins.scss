@@ -1,0 +1,83 @@
+
+//Mixins for MQ's
+@mixin for-tablet-only {
+@media (min-width: $screen-sm-min) { @content; }
+}
+
+@mixin for-tablet {
+@media (min-width: $screen-md-min) { @content; }
+}
+
+@mixin for-desktop-only {
+@media (min-width: $screen-lg-min) { @content; }
+}
+
+//Mixins for Flexbox
+@mixin flexbox {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexbox-column {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+//Mixins for Buttons
+
+@mixin nav-button {
+	background: #FFF; 
+	list-style: none;	
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	&:hover {
+	  background: $nav_button_color;
+		a {
+			color: #FFF;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-weight: $normal;
+		color: $font_color;
+	}
+}
+
+//Mixins for Text
+
+@mixin body-copy {
+	font-size: 16px;
+	font-weight: $normal;
+	colour: $font_color;
+	line-height: 1.5;
+}
+
+@mixin h4 {
+	font-weight: $normal;
+}
+
+@mixin headline--primary {
+	font-weight: $bold;
+	color: $headline_color;
+}
+
+@mixin quote {
+	font-size: 1.5em;
+	line-height: 1.4;
+	border-left: solid 8px $headline_color;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 20px;
+	font-style: italic;
+}

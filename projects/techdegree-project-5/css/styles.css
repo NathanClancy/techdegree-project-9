@@ -1,0 +1,87 @@
+/* CSS Document */
+
+/* Global Layout Set-up */
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;	
+}
+
+body {
+  margin-top: 30px;
+}
+
+input {
+  font-family: 'Merriweather', serif;
+  outline: none;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 10px;
+  width: 60%;
+  border:  2px solid #ddd;
+  border-radius: 2px;
+}
+
+.gallery-container {
+  text-align: center;
+  margin: 20px 5px;
+}
+
+
+img {
+  text-align: center;
+  margin: 10px;
+}
+
+.lb-image {
+  margin: 0;
+}
+
+li {
+  width: auto;
+  display: inline-block;
+}
+
+
+.lg-sub-html {
+	bottom: 200px !important;
+}
+
+.lg-sub-html p {
+	font-size: 20px;
+}
+
+#lightGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 768px) {
+
+  .gallery-container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  img {
+    margin: 15px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .gallery-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  img {
+    margin: 25px;
+  }
+}

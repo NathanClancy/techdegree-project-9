@@ -1,0 +1,321 @@
+/* CSS Document */
+
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: #2E2F3E;
+}
+
+.clearfix {
+	clear: both;
+	overflow: auto;
+}
+
+/* Nav Styles */
+
+nav {
+	background: #100E17;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+nav h1 {
+	font-size: 27px;
+	font-weight: 700;
+	color: #FFF;
+}
+
+/* Header Styles */
+
+header p {
+	padding: 0 14px 25px 14px;	
+}
+
+.headerSection hr {
+	width: 94%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+} 
+
+.hrDiv {
+	margin: 0 auto;
+}
+
+.headerSection {
+	margin-bottom: 25px;
+}
+
+/* Text Styles */
+
+h2 {
+	font-size: 20px;
+	color: #14151F;
+	font-weight: 700;
+	margin: 0 ;
+	padding-bottom: 10px;
+}
+
+p {
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 15px;
+	margin: 0;
+}
+
+/* Form Styles */
+
+h2 {
+	font-size: 20px;
+	color: #14151F;
+	font-weight: 700;
+	margin: 0 ;
+	padding-bottom: 17px;
+}
+
+fieldset {
+    border: 0;
+	padding: 0 15px 0 15px;
+	margin: 0 auto;
+}
+
+label {
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 15px;
+	margin: 0;	
+	color: #14151F;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.contactInfo input {
+	height: 50px;
+	background: #14151F;
+	border-radius: 5px;
+	width: 100%;
+	color: #FFF;
+	font-weight: 700;
+	border: 0;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	display: inline-block;
+}
+
+input#zipcode {
+	width: 200px;
+	display: block;
+}
+
+.contactInfo input:focus, textarea:focus {
+	border: 3px solid #03A9F4;
+	transition: 0.2s;
+}
+
+textarea {
+	min-height: 100px;
+	height: auto;
+	background: #14151F;
+	border-radius: 5px;
+	width: 100%;
+	color: #FFF;
+	font-weight: 700;
+	border: 0;
+	margin-bottom: 20px;
+	padding: 20px 10px;
+}
+
+select {
+	height: 50px;
+	background: #14151F;
+	border-radius: 5px;
+	width: 100%;
+	border: 0;	
+	margin-bottom: 20px;
+	color: #FFF;	
+	font-weight: 700;
+	padding: 0 20px;
+}
+
+option {
+	color: #FFF;
+	font-weight: 700;	
+	background: #14151F;	
+}
+
+
+input[type="checkbox"]:checked + label, 
+input[type="radio"]:checked + label  {
+	font-weight: 700;
+}
+
+label[for*="javaNews"] {
+	margin-bottom: 20px;
+}
+
+legend {
+	font-size: 20px;
+	color: #14151F;
+	font-weight: 700;
+	margin: 0 ;
+	padding-bottom: 17px;
+}
+
+/* Button Styles */
+
+button {
+	height: 60px;
+	background: #03A9F4; 
+	border-radius: 5px;
+	width: 100%;
+	color: #FFF;
+	font-weight: 700;
+	border: 0;
+	margin: 10px 0 20px 0;
+	padding: 0 10px;	
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  border: solid 3px #03A9F4;
+  color: #03A9F4;
+  transition: 0.3s;
+}
+
+::placeholder {
+  color: #525252;
+  text-align: right;
+}
+
+/* Main Styles */
+
+main {
+	text-align: left;
+}
+
+ hr {
+	width: 94%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+} 
+
+footer {
+	height: 130px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+	
+	fieldset {
+		width: 64%;
+	}
+	
+	.headerSection hr {
+		width: 59%;
+	}
+	
+	hr {
+		width: 59%;
+	}
+	
+	.contactInfo input {
+		width: 75%;
+
+}	
+	
+	.contactInfo label {
+		width: 24%;
+ 		text-align: left;
+	}
+	
+	select {
+		width: 75%;
+	}	
+	
+	input#zipcode {
+		display: inline-block;
+	}	
+	
+}
+
+
+@media (min-width:854px) {
+	
+	fieldset {
+		margin: 0 auto;
+		width: 64%;
+	}	
+	
+	.headerSection hr {
+	width: 61%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+} 
+	
+	 hr {
+	width: 61%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+} 
+	
+	.contactInfo input {
+		width: 75%;
+
+}
+	
+	.contactInfo label {
+		width: 24%;
+ 		text-align: left;
+	}
+	
+	select {
+		width: 75%;
+	}
+	
+	.contactInfo fieldset {
+		padding: 0 4px 0 15px;
+	}
+	
+		input#zipcode {
+		display: inline-block;
+	}		
+	
+}
+
+@media (min-width:1290px) {
+	
+		.headerSection hr {
+	width: 63%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+} 
+	
+	 hr {
+	width: 63%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+} 
+	
+}
+
+
+
+
+
+
+
+

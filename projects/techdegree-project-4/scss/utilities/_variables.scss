@@ -1,0 +1,42 @@
+
+//breakpoints
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1400px;
+
+//font variables
+$sans-serif: "Source Sans Pro", Arial, sans-serif;
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+$nav_font_color: #555656;
+$headline_color: #58E1C1;
+$font_color: #555656;
+$link_color: #51DDFC;
+$uppercase: uppercase;
+
+//button variables
+$nav_button_color: #58E1C1;
+$default_button_color: #51DDFC;
+$success_button_color: #63CC82;
+$error_button_color: #E4757A;
+$warning_button_color: #FD7856;
+$info_button_color: #927BC1;	
+
+//Grid variables
+$col-12: #80E8D1;
+$col-6: #3FABCA;
+$col-4: #7EE6FD;
+$col-3: #80E8D1;
+$col-5: #88D9A0;
+$col-7: #EC9FA3;
+$col-8: #FD9F85;
+
+//Font stacks
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
+$rubik: 'Rubik', sans-serif;   
+* {
+  font-family: $rubik;
+  font-weight: normal;
+}
